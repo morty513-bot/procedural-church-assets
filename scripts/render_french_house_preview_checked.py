@@ -1,8 +1,8 @@
 import bpy, os, math
 from mathutils import Vector
 
-SRC = '/home/mainuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v2/french_house_v2.blend'
-OUT_DIR = '/home/mainuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v2'
+SRC = '/home/mainuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v1/french_house_v1.blend'
+OUT_DIR = '/home/mainuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v1'
 
 bpy.ops.wm.open_mainfile(filepath=SRC)
 scene = bpy.context.scene
@@ -11,7 +11,7 @@ scene.render.resolution_x = 1280
 scene.render.resolution_y = 720
 scene.eevee.taa_render_samples = 16
 
-# Bounding-box framing copied from render_french_house_preview_checked.py
+# Compute world-space bounds for all non-ground meshes
 pts = []
 for obj in scene.objects:
     if obj.type != 'MESH':
@@ -35,6 +35,7 @@ if cam is None:
     cam = bpy.context.active_object
     scene.camera = cam
 
+# Distance from vertical FOV with generous margin so full model always fits
 fov = cam.data.angle_y
 half_h = (height * 0.5) * 1.40
 radius = (half_h / max(math.tan(fov * 0.5), 1e-4)) * 1.35
@@ -52,6 +53,7 @@ for i, a in enumerate(angles, start=1):
     scene.render.filepath = os.path.join(OUT_DIR, f'preview_checked_{i}.png')
     bpy.ops.render.render(write_still=True)
 
+# Detail shot still guaranteed to include roof+walls
 cam.location = Vector((center.x + radius * 0.65, center.y - radius * 0.65, center.z + height * 0.18))
 d = (center + Vector((0, 0, height * 0.15))) - cam.location
 cam.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler()

@@ -6,7 +6,7 @@ Run:
 
 import sys
 
-sys.path.append('/home/azureuser/.openclaw/workspace/scripts')
+sys.path.append('/home/mainuser/.openclaw/workspace/scripts')
 
 from blender_spire_utils import (  # noqa: E402
     TopAssemblyConfig,
@@ -14,7 +14,7 @@ from blender_spire_utils import (  # noqa: E402
     validate_top_assembly_contracts,
 )
 
-SRC = '/home/azureuser/.openclaw/workspace/assets/church_spire_v18/church_spire_v18.blend'
+SRC = '/home/mainuser/.openclaw/workspace/assets/church_spire_v18/church_spire_v18.blend'
 
 open_scene(SRC, width=640, height=360, samples=1)
 

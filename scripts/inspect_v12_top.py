@@ -1,7 +1,7 @@
 import bpy
 from mathutils import Vector
 
-SRC='/home/azureuser/.openclaw/workspace/assets/church_spire_v12/church_spire_v12.blend'
+SRC='/home/mainuser/.openclaw/workspace/assets/church_spire_v12/church_spire_v12.blend'
 bpy.ops.wm.open_mainfile(filepath=SRC)
 
 dg=bpy.context.evaluated_depsgraph_get()

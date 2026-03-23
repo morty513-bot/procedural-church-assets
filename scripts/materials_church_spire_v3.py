@@ -1,9 +1,9 @@
 import bpy
 import os
 
-BASE = "/home/azureuser/.openclaw/workspace/assets/church_spire_v2"
+BASE = "/home/mainuser/.openclaw/workspace/assets/church_spire_v2"
 blend = os.path.join(BASE, "church_spire_v2.blend")
-OUT = "/home/azureuser/.openclaw/workspace/assets/church_spire_v3"
+OUT = "/home/mainuser/.openclaw/workspace/assets/church_spire_v3"
 os.makedirs(OUT, exist_ok=True)
 
 bpy.ops.wm.open_mainfile(filepath=blend)

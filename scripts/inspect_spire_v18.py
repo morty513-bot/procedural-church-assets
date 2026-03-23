@@ -1,7 +1,7 @@
 import bpy
 from mathutils import Vector
 
-src='/home/azureuser/.openclaw/workspace/assets/church_spire_v18/church_spire_v18.blend'
+src='/home/mainuser/.openclaw/workspace/assets/church_spire_v18/church_spire_v18.blend'
 bpy.ops.wm.open_mainfile(filepath=src)
 
 print('OBJECTS:')

@@ -1,7 +1,7 @@
 import os
 import sys
 
-sys.path.append('/home/azureuser/.openclaw/workspace/scripts')
+sys.path.append('/home/mainuser/.openclaw/workspace/scripts')
 
 from blender_spire_utils import (
     TopAssemblyConfig,
@@ -17,8 +17,8 @@ from blender_spire_utils import (
     export_selected_meshes,
 )
 
-SRC = '/home/azureuser/.openclaw/workspace/assets/church_spire_v16/church_spire_v16.blend'
-OUT = '/home/azureuser/.openclaw/workspace/assets/church_spire_v17'
+SRC = '/home/mainuser/.openclaw/workspace/assets/church_spire_v16/church_spire_v16.blend'
+OUT = '/home/mainuser/.openclaw/workspace/assets/church_spire_v17'
 os.makedirs(OUT, exist_ok=True)
 
 scene = open_scene(SRC, width=1280, height=720, samples=16)

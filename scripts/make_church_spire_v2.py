@@ -3,7 +3,7 @@ import math
 import os
 from mathutils import Vector
 
-OUT_DIR = "/home/azureuser/.openclaw/workspace/assets/church_spire_v2"
+OUT_DIR = "/home/mainuser/.openclaw/workspace/assets/church_spire_v2"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 bpy.ops.wm.read_factory_settings(use_empty=True)

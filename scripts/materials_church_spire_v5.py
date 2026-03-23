@@ -1,8 +1,8 @@
 import bpy, os, math
 from mathutils import Vector
 
-SRC='/home/azureuser/.openclaw/workspace/assets/church_spire_v2/church_spire_v2.blend'
-OUT='/home/azureuser/.openclaw/workspace/assets/church_spire_v5'
+SRC='/home/mainuser/.openclaw/workspace/assets/church_spire_v2/church_spire_v2.blend'
+OUT='/home/mainuser/.openclaw/workspace/assets/church_spire_v5'
 os.makedirs(OUT, exist_ok=True)
 
 bpy.ops.wm.open_mainfile(filepath=SRC)

@@ -1,8 +1,8 @@
 import bpy, os, math
 from mathutils import Vector
 
-SRC = '/home/azureuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v3/french_house_v3.blend'
-OUT_DIR = '/home/azureuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v3'
+SRC = '/home/mainuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v3/french_house_v3.blend'
+OUT_DIR = '/home/mainuser/.openclaw/workspace/procedural-church-assets/assets/french_house_v3'
 
 bpy.ops.wm.open_mainfile(filepath=SRC)
 scene = bpy.context.scene

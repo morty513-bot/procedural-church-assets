@@ -1,8 +1,8 @@
 import bpy, os, math
 from mathutils import Vector
 
-SRC = '/home/azureuser/.openclaw/workspace/assets/church_spire_v12/church_spire_v12.blend'
-OUT_DIR = '/home/azureuser/.openclaw/workspace/assets/church_spire_v13'
+SRC = '/home/mainuser/.openclaw/workspace/assets/church_spire_v12/church_spire_v12.blend'
+OUT_DIR = '/home/mainuser/.openclaw/workspace/assets/church_spire_v13'
 BLEND_OUT = os.path.join(OUT_DIR, 'church_spire_v13.blend')
 GLB_OUT = os.path.join(OUT_DIR, 'church_spire_v13.glb')
 EPS = 0.02

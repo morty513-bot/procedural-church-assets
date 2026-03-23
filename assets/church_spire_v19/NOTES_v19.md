@@ -35,9 +35,9 @@
 - Cube.006: 15.5600 -> 15.5870
 
 ## Outputs
-- Blend: `/home/azureuser/.openclaw/workspace/assets/church_spire_v19/church_spire_v19.blend`
-- GLB: `/home/azureuser/.openclaw/workspace/assets/church_spire_v19/church_spire_v19.glb`
-- Preview (wide): `/home/azureuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_wide_1.png`
-- Preview (wide): `/home/azureuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_wide_2.png`
-- Preview (wide): `/home/azureuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_wide_3.png`
-- Preview (detail): `/home/azureuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_detail.png`
+- Blend: `/home/mainuser/.openclaw/workspace/assets/church_spire_v19/church_spire_v19.blend`
+- GLB: `/home/mainuser/.openclaw/workspace/assets/church_spire_v19/church_spire_v19.glb`
+- Preview (wide): `/home/mainuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_wide_1.png`
+- Preview (wide): `/home/mainuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_wide_2.png`
+- Preview (wide): `/home/mainuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_wide_3.png`
+- Preview (detail): `/home/mainuser/.openclaw/workspace/assets/church_spire_v19/preview_v19_detail.png`

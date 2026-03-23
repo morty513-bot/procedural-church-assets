@@ -11,7 +11,7 @@ import os
 import sys
 
 # Allow importing helper module from this same directory
-sys.path.append('/home/azureuser/.openclaw/workspace/scripts')
+sys.path.append('/home/mainuser/.openclaw/workspace/scripts')
 
 from blender_spire_utils import (  # noqa: E402
     TopAssemblyConfig,
@@ -27,8 +27,8 @@ from blender_spire_utils import (  # noqa: E402
     export_selected_meshes,
 )
 
-SRC = '/home/azureuser/.openclaw/workspace/assets/church_spire_v17/church_spire_v17.blend'
-OUT = '/home/azureuser/.openclaw/workspace/assets/church_spire_v18'
+SRC = '/home/mainuser/.openclaw/workspace/assets/church_spire_v17/church_spire_v17.blend'
+OUT = '/home/mainuser/.openclaw/workspace/assets/church_spire_v18'
 os.makedirs(OUT, exist_ok=True)
 
 scene = open_scene(SRC, width=1280, height=720, samples=16)

@@ -11,7 +11,7 @@ import math
 import bpy
 from mathutils import Vector
 
-sys.path.append('/home/azureuser/.openclaw/workspace/scripts')
+sys.path.append('/home/mainuser/.openclaw/workspace/scripts')
 
 from blender_spire_utils import (  # noqa: E402
     TopAssemblyConfig,
@@ -27,8 +27,8 @@ from blender_spire_utils import (  # noqa: E402
     export_selected_meshes,
 )
 
-SRC = '/home/azureuser/.openclaw/workspace/assets/church_spire_v18/church_spire_v18.blend'
-OUT = '/home/azureuser/.openclaw/workspace/assets/church_spire_v19'
+SRC = '/home/mainuser/.openclaw/workspace/assets/church_spire_v18/church_spire_v18.blend'
+OUT = '/home/mainuser/.openclaw/workspace/assets/church_spire_v19'
 os.makedirs(OUT, exist_ok=True)
 
 scene = open_scene(SRC, width=1365, height=768, samples=24)

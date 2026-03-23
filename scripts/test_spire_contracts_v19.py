@@ -1,9 +1,9 @@
 import sys
-sys.path.append('/home/azureuser/.openclaw/workspace/scripts')
+sys.path.append('/home/mainuser/.openclaw/workspace/scripts')
 
 from blender_spire_utils import TopAssemblyConfig, open_scene, validate_top_assembly_contracts
 
-SRC='/home/azureuser/.openclaw/workspace/assets/church_spire_v19/church_spire_v19.blend'
+SRC='/home/mainuser/.openclaw/workspace/assets/church_spire_v19/church_spire_v19.blend'
 open_scene(SRC, width=640, height=360, samples=1)
 
 config = TopAssemblyConfig(

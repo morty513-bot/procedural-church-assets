@@ -3,7 +3,7 @@ import math
 import os
 from mathutils import Vector
 
-BASE = "/home/azureuser/.openclaw/workspace/assets/church_spire"
+BASE = "/home/mainuser/.openclaw/workspace/assets/church_spire"
 blend = os.path.join(BASE, "church_spire_lowpoly.blend")
 
 bpy.ops.wm.open_mainfile(filepath=blend)

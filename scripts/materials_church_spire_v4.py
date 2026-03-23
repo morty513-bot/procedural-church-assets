@@ -3,8 +3,8 @@ import os
 import math
 from mathutils import Vector
 
-SRC_BLEND = "/home/azureuser/.openclaw/workspace/assets/church_spire_v2/church_spire_v2.blend"
-OUT = "/home/azureuser/.openclaw/workspace/assets/church_spire_v4"
+SRC_BLEND = "/home/mainuser/.openclaw/workspace/assets/church_spire_v2/church_spire_v2.blend"
+OUT = "/home/mainuser/.openclaw/workspace/assets/church_spire_v4"
 os.makedirs(OUT, exist_ok=True)
 
 bpy.ops.wm.open_mainfile(filepath=SRC_BLEND)

@@ -3,7 +3,7 @@ import bmesh
 import math
 import os
 
-OUT_DIR = "/home/azureuser/.openclaw/workspace/assets/church_spire"
+OUT_DIR = "/home/mainuser/.openclaw/workspace/assets/church_spire"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # Reset scene
